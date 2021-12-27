@@ -7,11 +7,11 @@ Basic flight simulation using Ardupilot SITL
 Instructions to set up ArduPilot environment on Ubuntu for Software-in-the-Loop simulations.
 
 #### 1.  Update Ubunt/Linux and set up 'Git'
-    '''
+    
     sudo apt-get update
     sudo apt-get install git
     sudo apt-get install gitk git-gui
-    '''
+    
 
 #### 2. Clone
     '''
@@ -34,10 +34,10 @@ Instructions to set up ArduPilot environment on Ubuntu for Software-in-the-Loop 
 
 ## Start SITL Simulator
 
-'''
-cd ardupilot/ArduCopter
-../Tools/autotest/sim_vehicle.py -v ArduCopter --console --map
-'''
+
+    cd ardupilot/ArduCopter
+    ../Tools/autotest/sim_vehicle.py -v ArduCopter --console --map
+
 
 ##  TakeOff
 
