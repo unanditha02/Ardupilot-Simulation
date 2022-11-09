@@ -34,3 +34,15 @@ Instructions to set up ArduPilot environment on Ubuntu for Software-in-the-Loop 
     mode guided
     arm throttle
     takeoff 40
+
+## SITL with Gazebo
+
+    Setup Gazebo interface [Instructions](https://ardupilot.org/dev/docs/using-gazebo-simulator-with-sitl.html#preconditions)
+
+    gazebo --verbose worlds/iris_arducopter_runway.world
+    ../Tools/autotest/sim_vehicle.py -f gazebo-iris --console --map
+
+
+## Connecting with ROS
+
+    roslaunch mavros apm.launch fcu_url:=udp://:14855@
